@@ -1,7 +1,7 @@
 require 'fileutils'
 
 here = File.dirname(__FILE__)
-there = defined?(RAILS_ROOT) ? RAILS_ROOT : "#{here}/../../.."
+there = defined?(Rails.root) ? Rails.root : "#{here}/../../.."
 
 puts "Uninstalling Uploadify..."
 
